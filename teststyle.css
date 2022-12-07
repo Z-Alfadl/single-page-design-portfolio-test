@@ -1,0 +1,246 @@
+:root {
+    --slateblue: #755DCE;
+    --sandybrown: #F6A560;
+    --salmonpink: #F39E9E;
+    --terracotta: #EB7565;
+    --aquamarine: #61C4B7;
+    --americanpurple: #552049;
+    --richblack: #030303;
+    --sonicsilver: #7A746E;
+    --seashell: #FFF7F0;
+    font-size: 16px;
+    line-height: 1.625em;
+    font-weight: 700;
+    margin: 1rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--seashell);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header,
+footer,
+.intro,
+.grid,
+.personal,
+.promo,
+.contact {
+    max-width: 343px;
+    margin-inline: 1rem;
+    margin: 0 auto;
+}
+
+/*Styling for Free Consultation Buttons*/
+.consult {
+    color: var(--seashell);
+    border-radius: 1.75rem;
+    border: none;
+    font-size: .875;
+    font-weight: 700;
+    width: 176px;
+    height: 44px;
+    padding: 0.5rem 1.75rem;
+}
+
+.black {
+    background-color: var(--richblack);
+}
+
+.black:hover {
+    background-color: var(--slateblue);
+}
+
+.orange {
+    background-color: var(--terracotta);
+}
+
+.orange:hover {
+    background-color: var(--sandybrown);
+}
+
+/*Header and Footer Icon/Button Styling */
+.icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem 2rem;
+    width: 20em;
+}
+
+/*Introduction*/
+
+.intro {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: var(--richblack);
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.835rem;
+    margin-top: 2em;
+}
+
+p {
+    color: var(--sonicsilver);
+    font-weight: 500;
+}
+
+/*Grid*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 159px 159px;
+    grid-template-rows: repeat(6, 182px);
+    gap: 24px;
+}
+
+.grid>div {
+    border-radius: 0.5em;
+    position: relative;
+}
+
+.big {
+    background-color: var(--slateblue);
+    grid-column: 1/3;
+    grid-row: 1/3;
+    height: 364px;
+    width: 343px;
+    margin-top: 1.5em;
+}
+
+.med {
+    grid-column: 1/3;
+}
+
+.ui {
+    background-color: var(--sandybrown);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.app {
+    background-color: var(--salmonpink);
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.photo {
+    background-color: var(--aquamarine);
+}
+
+.ill {
+    background-color: var(--terracotta);
+}
+
+.mg {
+    background-color: var(--americanpurple);
+}
+
+.grid span {
+    color: white;
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+}
+
+.grid img {
+    float: right;
+    margin: 1.5em;
+}
+
+/*Personal Section*/
+
+.personal {
+    margin-top: 6.25em;
+    align-items: center;
+    height: 602px;
+}
+
+.personal img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.personal-text {
+    margin-top: 2.5em;
+    text-align: center;
+}
+
+.personal-text h2 {
+    font-size: 1.625rem;
+    line-height: 2rem;
+    margin: 0;
+    color: var(--richblack);
+}
+
+.personal-text p {
+    margin: 1.5rem auto;
+}
+
+/*Promo Slides using Swiper.js*/
+.promo {
+    text-align: center;
+    margin-top: 6.25rem;
+}
+.swiper {
+
+}
+
+.swiper-slide {
+    width: 270px !important;
+    height: 180px !important; 
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.625rem;
+}
+/*Swiper Arrow Styling*/
+.arrow-box {
+    width: 144px;
+    height: 64px;
+    position: relative;
+    margin: 2rem auto 6.25rem;
+}
+.swiper-button-prev img,
+ .swiper-button-next img {
+    background-color: var(--richblack);
+    padding: 1.5rem;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
+}
+
+/*Contact Sections*/
+.contact {
+    height: 352px;
+    border-radius: 0.625rem;
+    background-color: var(--richblack);
+    text-align: center;
+}
+
+.contact-text {
+      margin: 3rem 1.5rem;
+}
+
+.contact-text h2 {
+    color: var(--seashell);
+}
+.contact-text p {
+    color: var(--seashell);
+}
